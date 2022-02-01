@@ -6,7 +6,7 @@ import { EventEmitter } from 'events';
 
 export const seeder = {
   seed(options) {
-    return (knex, Promise) => {
+    return (knex) => {
       return new Promise((resolve, reject) => {
         KnexSeeder.fromKnexClient(knex)
           .on('end', resolve)
