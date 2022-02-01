@@ -3,7 +3,6 @@ import parse from 'csv-parse';
 import iconv from 'iconv-lite';
 import _ from 'lodash';
 import { EventEmitter } from 'events';
-import { Promise } from 'bluebird';
 
 export const seeder = {
   seed(options) {
